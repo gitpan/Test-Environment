@@ -1,0 +1,37 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 499fda4c53e8f991c962088da08aceb95d86582f Changes
+SHA1 a1140732007c7a8560db0b483b836f2374e621fe MANIFEST
+SHA1 d75c3c14776180d436928aae1837f442a524b596 META.yml
+SHA1 8f9de667f3ca4c3105b87ce837bafbbfe061f2bb Makefile.PL
+SHA1 ac350eb211fd36e4ffb5a74a97ba2f71982e98d2 README
+SHA1 46b6bf98c957095655130eea5c8c799d67a0d340 lib/Test/Environment.pm
+SHA1 e076dc686ede3b97726656c04d18c433581e1373 lib/Test/Environment/Plugin/Dump.pm
+SHA1 1c8ec93e7d4189cf32b1a4fa393bfc4a0195efb6 lib/Test/Environment/Plugin/PostgreSQL.pm
+SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00_distribution.t
+SHA1 4aeb184c9bed26ab6c3be1ebdb8470c0cb353b1f t/00_signature.t
+SHA1 cc8e7197735de02bde149af8d3af142b805a86eb t/01_Test-Environment.t
+SHA1 2c7752187d2ba9dceb1d55e24c17ef39a2ad96c5 t/02_Test-Environment-Plugin-PostreSQL.t
+SHA1 adabca08b4627fb5868c3e7ff5323696c6df7e26 t/03_Test-Environment-Plugin-Dump.t
+SHA1 0757f7f180eb73f6a777de926574ef722921cc36 t/dumps/dump01.txt
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFHE8lUuzJBASXpqvsRAsknAJ4piQnJ49klJNrdRdL4AElsz9EmMQCeLHim
+n+w5+mleAsndhfU/xwLYVMQ=
+=cJd5
+-----END PGP SIGNATURE-----
