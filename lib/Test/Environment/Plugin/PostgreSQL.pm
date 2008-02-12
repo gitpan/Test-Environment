@@ -16,6 +16,9 @@ Test::Environment::Plugin::PostgreSQL - PostreSQL psql function for testing
 		'hostname' => $config->{'db'}->{'hostname'},
 		'username' => $config->{'db'}->{'username'},
 		'password' => $config->{'db'}->{'password'},
+		# or skip hostname and database and set them via
+		#'dbi_dsn' => 'dbi:Pg:dbname=dsn_test;host=localhost',
+
 	);
 	
 	# execute sql query
@@ -31,13 +34,23 @@ Test::Environment::Plugin::PostgreSQL - PostreSQL psql function for testing
 This plugin will export 'psql' function that can be used to execute PostreSQL psql command
 with lot of options for testing.
 
+Module will prepare %ENV for postgres:
+
+	'username' => 'PGUSER',
+	'password' => 'PGPASSWORD',
+	'database' => 'PGDATABASE',
+	'hostname' => 'PGHOST',
+	'port'     => 'PGPORT',
+
+Any postgres connection settings not listed or undef will be deleted from the %ENV hash.
+
 =cut
 
 
 use strict;
 use warnings;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 use base qw{ Exporter };
 our @EXPORT = qw{
@@ -47,7 +60,8 @@ our $debug = 0;
 
 use Carp::Clan;
 use String::ShellQuote;
-
+use List::MoreUtils 'any';
+use DBI;
 
 =head1 FUNCTIONS
 
@@ -94,6 +108,25 @@ The rest of the option related to the psql command.
 sub psql {
 	my %arg = @_;
 
+	# deparse dbi_dsn if passed
+	if (defined $arg{'dbi_dsn'}) {
+		my($scheme, $driver, $attr_string, $attr_hash, $driver_dsn)
+			= DBI->parse_dsn($arg{'dbi_dsn'});
+		
+		croak 'not a Pg dbi dsn "'.$arg{'dbi_dsn'}.'"'
+			if (($scheme ne 'dbi') or ($driver ne 'Pg'));
+   	
+		# contruct hash out of "dbname=dsn_test;host=localhost;port=123"
+		my %dsn_options = map { split '=', $_ } split(';',$driver_dsn);
+		
+		$arg{'database'} = $dsn_options{'dbname'}
+			if exists $dsn_options{'dbname'};
+		$arg{'hostname'} = $dsn_options{'host'}
+			if exists $dsn_options{'host'};
+		$arg{'port'}     = $dsn_options{'port'}
+			if exists $dsn_options{'port'};
+	}
+
 	my %pg_settings_names = (
 		'username' => 'PGUSER',
 		'password' => 'PGPASSWORD',
@@ -102,13 +135,16 @@ sub psql {
 		'port'     => 'PGPORT',
 	);
 	
-	# set/delete postgres ENV variables
-	foreach my $arg_name (keys %pg_settings_names) {
-		my $env_name = $pg_settings_names{$arg_name};
-		( defined $arg{$arg_name}
-			? $ENV{$env_name} = $arg{$arg_name}
-			: delete $ENV{$env_name}
-		);		
+	# change %ENV only if at least one pg connection setting set
+	if (any { $pg_settings_names{$_} } keys %arg) {
+		# set/delete postgres ENV variables
+		foreach my $arg_name (keys %pg_settings_names) {
+			my $env_name = $pg_settings_names{$arg_name};
+			( defined $arg{$arg_name}
+				? $ENV{$env_name} = $arg{$arg_name}
+				: delete $ENV{$env_name}
+			);		
+		}
 	}
 	
 	# function paramaters
