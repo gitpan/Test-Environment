@@ -14,24 +14,29 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 499fda4c53e8f991c962088da08aceb95d86582f Changes
-SHA1 a1140732007c7a8560db0b483b836f2374e621fe MANIFEST
-SHA1 d75c3c14776180d436928aae1837f442a524b596 META.yml
-SHA1 8f9de667f3ca4c3105b87ce837bafbbfe061f2bb Makefile.PL
-SHA1 ac350eb211fd36e4ffb5a74a97ba2f71982e98d2 README
-SHA1 46b6bf98c957095655130eea5c8c799d67a0d340 lib/Test/Environment.pm
-SHA1 e076dc686ede3b97726656c04d18c433581e1373 lib/Test/Environment/Plugin/Dump.pm
-SHA1 1c8ec93e7d4189cf32b1a4fa393bfc4a0195efb6 lib/Test/Environment/Plugin/PostgreSQL.pm
+SHA1 4c5bd5a8fc15be8f9dc144db3a76a8d9a3b1054d Changes
+SHA1 95c857a43576bd52d88469b172e485d805612a1a MANIFEST
+SHA1 92cb683132c934214c3212e02e5b77e09b9b4d50 META.yml
+SHA1 1d8fa254269b5098fee10f4a237cd2477c433075 Makefile.PL
+SHA1 fc28f02b92b9150ce4ea6a101ab0135eef36fb8f README
+SHA1 6f1af5265eaa6719b57209b1ec487ea3ab6add2a debian/changelog
+SHA1 5d9474c0309b7ca09a182d888f73b37a8fe1362c debian/compat
+SHA1 3818a9b7ca8e99a46497069675815da46f0cb9fe debian/control
+SHA1 8f3014c1aec65c24877f0a9ef8128d5c018ab592 debian/copyright
+SHA1 f07c262df9979938f451f49fec952df6b8edb10f debian/rules
+SHA1 1e672a28a31f28450870ce79735e4f07f180fd4c lib/Test/Environment.pm
+SHA1 ba26d01596c4ae31d0bb654f4aebecdb3372888d lib/Test/Environment/Plugin/Dump.pm
+SHA1 6836e848ed2be86423b07a8fc1472ff9f34cda3e lib/Test/Environment/Plugin/PostgreSQL.pm
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00_distribution.t
 SHA1 4aeb184c9bed26ab6c3be1ebdb8470c0cb353b1f t/00_signature.t
 SHA1 cc8e7197735de02bde149af8d3af142b805a86eb t/01_Test-Environment.t
-SHA1 2c7752187d2ba9dceb1d55e24c17ef39a2ad96c5 t/02_Test-Environment-Plugin-PostreSQL.t
+SHA1 68ae2f425bc360ad96218aad8de18991fd51ea3a t/02_Test-Environment-Plugin-PostreSQL.t
 SHA1 adabca08b4627fb5868c3e7ff5323696c6df7e26 t/03_Test-Environment-Plugin-Dump.t
 SHA1 0757f7f180eb73f6a777de926574ef722921cc36 t/dumps/dump01.txt
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFHE8lUuzJBASXpqvsRAsknAJ4piQnJ49klJNrdRdL4AElsz9EmMQCeLHim
-n+w5+mleAsndhfU/xwLYVMQ=
-=cJd5
+iD8DBQFHsVKTuzJBASXpqvsRApUSAJ9oU6mbpIXbrrCaedxnrKn1B6PgEwCfUKAh
+m3oMPniXVxJd01awfHIUU1c=
+=hcFl
 -----END PGP SIGNATURE-----

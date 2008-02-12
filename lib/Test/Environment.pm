@@ -31,14 +31,19 @@ Also sets:
 
 	$ENV{'RUNNING_ENVIRONMENT'} = 'testing';
 
-The plugins will export their routines so you can use them in your tests.
+The basic idea is to call all the plugins you will need in your testing
+script. The plugins will export their routines so you can use them in your tests
+easily. By the $ENV{'RUNNING_ENVIRONMENT'} you can announce that you are running
+in the testing mode to all the components of your tool. For example MyApp::Config
+module can decide uppon the %ENV from where to run the configuration file. (for testing
+look in t/conf/ instead of conf/ for ordinary usage)
 
 =cut
 
 use strict;
 use warnings;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 use Carp::Clan;
 use English '-no_match_vars';
@@ -81,7 +86,7 @@ Test::Environment::Plugin::* L<http://search.cpan.org/search?query=Test%3A%3AEnv
 
 =head1 AUTHOR
 
-Jozef Kutej, E<lt>jozef@kutej.net<gt>
+Jozef Kutej, E<lt>jozef@kutej.netE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
