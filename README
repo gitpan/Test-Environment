@@ -1,29 +1,55 @@
-Test-Environment version 0.01
-=============================
+NAME
+    Test::Environment - Base module for loading Test::Environment::Plugin::*
 
-SEE lib/Test/Environment.pm POD for description.
+SYNOPSIS
+            use Test::Environment qw{
+                    PostgreSQL
+                    Dump
+            };
+        
+            # now we have 'psql', 'dump_with_name', ... functions in current namespace.
+            # imported from Test::Environment::Plugin::PostreSQL and Test::Environment::Plugin::Dump
 
-INSTALLATION
+            eq_or_diff(
+                    [ psql(
+                            'switches' => '--expanded',
+                            'command'  => 'SELECT * FROM Table LEFT JOIN OtherTable USING (other_id) ORDER BY other_id;',
+                    ) ],
+                    [ dump_with_name('test_01.dump') ],
+                    'check db loading',
+            );
 
-To install this module type the following:
+DESCRIPTION
+    This is the base module to load Test::Environment::Plugin::* modules.
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+    Also sets:
 
-DEPENDENCIES
+            $ENV{'RUNNING_ENVIRONMENT'} = 'testing';
 
-see Makefile.PL
+    The basic idea is to call all the plugins you will need in your testing
+    script. The plugins will export their routines so you can use them in
+    your tests easily. By the $ENV{'RUNNING_ENVIRONMENT'} you can announce
+    that you are running in the testing mode to all the components of your
+    tool. For example MyApp::Config module can decide uppon the %ENV from
+    where to run the configuration file. (for testing look in t/conf/
+    instead of conf/ for ordinary usage)
 
-COPYRIGHT AND LICENCE
+FUNCTIONS
+  import()
+    Will load choosen Test::Environment::Plugin::? plugins.
 
-Put the correct copyright and licence information here.
+SEE ALSO
+    Test::Environment::Plugin::*
+    <http://search.cpan.org/search?query=Test%3A%3AEnvironment%3A%3APlugin%3
+    A%3A&mode=module>
 
-Copyright (C) 2007 by Jozef Kutej
+AUTHOR
+    Jozef Kutej, <jozef@kutej.net>
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.8 or,
-at your option, any later version of Perl 5 you may have available.
+COPYRIGHT AND LICENSE
+    Copyright (C) 2007 by Jozef Kutej
 
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself, either Perl version 5.8.8 or, at
+    your option, any later version of Perl 5 you may have available.
 

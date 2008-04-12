@@ -1,5 +1,8 @@
 Revision history for Perl extension Test::Environment.
 
+0.04  Thu Apr 10 18:00:00 2008
+   - Apache2 plugin added
+
 0.03  Tue Feb 12 09:47:00 2008
    - fixed env unsetting only when needed
    - parsing of dbi_dsn
@@ -9,5 +12,5 @@ Revision history for Perl extension Test::Environment.
    - propper setting and unsetting postgres env variables
 
 0.01  Fri Oct 12 17:31:21 2007
-	- initial version
+   - initial version
 

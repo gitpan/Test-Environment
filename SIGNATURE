@@ -14,17 +14,22 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 49946913dfe9fc0d8b66cb0a973fd9b71a8620b3 Changes
-SHA1 95c857a43576bd52d88469b172e485d805612a1a MANIFEST
-SHA1 003057a38999cbc421944028e7040748e01a6f11 META.yml
-SHA1 e1edd91e880c5df2ace644e029917febb99e5641 Makefile.PL
-SHA1 fc28f02b92b9150ce4ea6a101ab0135eef36fb8f README
+SHA1 90a3731dc134ddbd412de8d1212925a233a77e81 Build.PL
+SHA1 65ad672db393e9b5111a89f7f1451a216db1fb04 Changes
+SHA1 4ed20b7ed1c600387b59d0c98794d9e9edfdb416 MANIFEST
+SHA1 414968780050e27e4da507d099b739aece032d54 META.yml
+SHA1 064a5eee5076a29b4d80473ba21b49c9b887eb4f Makefile.PL
+SHA1 798c4a06bfd5002df0ecb72191f3514c9ae01b31 README
 SHA1 4511cd2e17c98cafdae25638b8899ad012f6f328 debian/changelog
 SHA1 5d9474c0309b7ca09a182d888f73b37a8fe1362c debian/compat
 SHA1 1c25f6bfaf185e7b5985e12b8c57115d2ee5178d debian/control
 SHA1 8f3014c1aec65c24877f0a9ef8128d5c018ab592 debian/copyright
 SHA1 f07c262df9979938f451f49fec952df6b8edb10f debian/rules
-SHA1 b30074dad6db46a16fff0dfd355105e0dfd386a7 lib/Test/Environment.pm
+SHA1 729e53017380a5e8aa8dcd78bf6679b7f83950e2 lib/Test/Environment.pm
+SHA1 4cf6c013bc65597a8173bf3afdc4e3415106155b lib/Test/Environment/Plugin/Apache2.pm
+SHA1 015d8db35f60308678a9734eec905b9ac56f2032 lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
+SHA1 d4605a3fc2c2042fa5c04dc579a0c691ed3fd958 lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
+SHA1 868402b35334fac63f3a1a87dfcdb81ae875b703 lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
 SHA1 ba26d01596c4ae31d0bb654f4aebecdb3372888d lib/Test/Environment/Plugin/Dump.pm
 SHA1 ccf6f91fb859a199a98030e17dfa3ad8c99876b6 lib/Test/Environment/Plugin/PostgreSQL.pm
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00_distribution.t
@@ -36,7 +41,7 @@ SHA1 0757f7f180eb73f6a777de926574ef722921cc36 t/dumps/dump01.txt
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFHsaBruzJBASXpqvsRAhfsAKCrkASkb/zlo9Dz9pgnsFzAZvt1awCfe5Vx
-1c37yao3ho4GTMITPGuQ6y4=
-=xp7Z
+iD8DBQFIAQkhuzJBASXpqvsRAgOZAJ4yzhiP6l+Mp4P6nKuVUhjdf0h2ggCgl5ts
+nYjoWAkyg4t61lCaEgiFzGM=
+=NLKK
 -----END PGP SIGNATURE-----
