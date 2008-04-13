@@ -1,3 +1,7 @@
+package Test::Environment::Plugin::Apache2::Apache2::Log;
+
+1;
+
 package Apache2::Log;
 
 =head1 NAME

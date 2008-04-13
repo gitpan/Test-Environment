@@ -1,3 +1,7 @@
+package Test::Environment::Plugin::Apache2::Apache2::RequestRec;
+
+1;
+
 package Apache2::RequestRec;
 
 =head1 NAME
