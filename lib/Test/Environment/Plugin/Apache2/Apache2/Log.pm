@@ -1,5 +1,7 @@
 package Test::Environment::Plugin::Apache2::Apache2::Log;
 
+our $VERSION = '0.01';
+
 1;
 
 package Apache2::Log;
@@ -28,7 +30,6 @@ use strict;
 our $VERSION = '0.01';
 
 use Log::Log4perl;
-use List::MoreUtils 'none';
 
 
 =head1 METHODS

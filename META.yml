@@ -1,16 +1,21 @@
 ---
 name: Test-Environment
-version: 0.04_02
+version: 0.04_03
 author:
   - 'Jozef Kutej <jozef@kutej.net>'
 abstract: Base module for loading Test::Environment::Plugin::*
 license: perl
 requires:
+  APR::Pool: 0
+  APR::Table: 0
   Carp::Clan: 0
+  Class::Accessor::Fast: 0
   DBI: 0
   File::Basename: 0
   File::Slurp: 0
+  IO::String: 0
   List::MoreUtils: 0
+  Log::Log4perl: 0
   String::ShellQuote: 0
   Test::Differences: 0
   Test::More: 0
@@ -28,7 +33,7 @@ provides:
     version: 0.01
   Test::Environment:
     file: lib/Test/Environment.pm
-    version: 0.04_02
+    version: 0.04_03
   Test::Environment::Plugin::Apache2:
     file: lib/Test/Environment/Plugin/Apache2.pm
     version: 0.01

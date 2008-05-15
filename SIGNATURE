@@ -14,22 +14,22 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 90a3731dc134ddbd412de8d1212925a233a77e81 Build.PL
+SHA1 946066eb52585118ba9a082c0a1394f612b38b30 Build.PL
 SHA1 65ad672db393e9b5111a89f7f1451a216db1fb04 Changes
-SHA1 4ed20b7ed1c600387b59d0c98794d9e9edfdb416 MANIFEST
-SHA1 7fb5ef5c9d4e4edaebccec487f77466837aefab0 META.yml
-SHA1 064a5eee5076a29b4d80473ba21b49c9b887eb4f Makefile.PL
+SHA1 92d2f5c2bb13dd4becf1e628980cfb12f86af5f4 MANIFEST
+SHA1 c3eaf81fe5f9950a39effbae4a89f10c082e739a META.yml
+SHA1 81020329df384103640641e07bc2669c4809f273 Makefile.PL
 SHA1 798c4a06bfd5002df0ecb72191f3514c9ae01b31 README
 SHA1 4511cd2e17c98cafdae25638b8899ad012f6f328 debian/changelog
 SHA1 5d9474c0309b7ca09a182d888f73b37a8fe1362c debian/compat
 SHA1 1c25f6bfaf185e7b5985e12b8c57115d2ee5178d debian/control
 SHA1 8f3014c1aec65c24877f0a9ef8128d5c018ab592 debian/copyright
 SHA1 f07c262df9979938f451f49fec952df6b8edb10f debian/rules
-SHA1 c07e604496a8c0eb221b0f5ab120bc67f83b8b22 lib/Test/Environment.pm
+SHA1 438cafcfebacef854d7bf4204ce908ccf20c24b1 lib/Test/Environment.pm
 SHA1 4cf6c013bc65597a8173bf3afdc4e3415106155b lib/Test/Environment/Plugin/Apache2.pm
-SHA1 b10c0c4b332afb631bc572e8661e2b51b21b364b lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
-SHA1 7f4249f067d5ad0899d2774a2a9d84abbc7014fb lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
-SHA1 970ab0192594d1666be2e1892ced1a486f360901 lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
+SHA1 3f6af3aa3c2f8d955d46b3c0149671b223c70ebd lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
+SHA1 d9b488dd5f8e712b2c7922015ac8dae02dfa5056 lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
+SHA1 dca114ca0078fec949bc465e332a42ac87b7db25 lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
 SHA1 ba26d01596c4ae31d0bb654f4aebecdb3372888d lib/Test/Environment/Plugin/Dump.pm
 SHA1 ccf6f91fb859a199a98030e17dfa3ad8c99876b6 lib/Test/Environment/Plugin/PostgreSQL.pm
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00_distribution.t
@@ -37,11 +37,49 @@ SHA1 4aeb184c9bed26ab6c3be1ebdb8470c0cb353b1f t/00_signature.t
 SHA1 cc8e7197735de02bde149af8d3af142b805a86eb t/01_Test-Environment.t
 SHA1 74695fb954a27da8b589c09de15c2dc7e7480382 t/02_Test-Environment-Plugin-PostreSQL.t
 SHA1 adabca08b4627fb5868c3e7ff5323696c6df7e26 t/03_Test-Environment-Plugin-Dump.t
+SHA1 dab05adae5b01639b4b445df2f72100e51b89232 t/04_Test-Environment-Plugin-Apache2.t
 SHA1 0757f7f180eb73f6a777de926574ef722921cc36 t/dumps/dump01.txt
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Access.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Build.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/BuildConfig.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/CmdParms.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Command.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Connection.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Const.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Directive.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Filter.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/FilterRec.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/HookRun.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Log.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/MPM.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Module.pm
+SHA1 ca344f94594e2717215de2d2e1951a8be1067f72 t/lib-no-Apache2/Apache2/NonExisting.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/ParseSource.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/PerlSections.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/PerlSections/Dump.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Process.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Reload.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/RequestIO.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/RequestRec.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/RequestUtil.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Resource.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Response.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/ServerRec.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/ServerUtil.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/SizeLimit.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/SourceTables.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Status.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/SubProcess.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/SubRequest.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/URI.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Util.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/XSLoader.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/compat.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/porting.pm
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFIAk0RuzJBASXpqvsRAnMGAJ93dxZndZR9gmoVkCkzk92J6g3jxACfXd7h
-Sr0GM/dE2VBYc0mfwRHXmmA=
-=QKeI
+iD8DBQFIK8nhuzJBASXpqvsRApeSAJ99Q4zbldSGz6I2e9LBrtI+REuq0QCeM5V6
+/NltwgGG8/+cNmAyrdwEh/s=
+=7vkU
 -----END PGP SIGNATURE-----
