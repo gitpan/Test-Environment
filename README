@@ -6,8 +6,8 @@ SYNOPSIS
                     PostgreSQL
                     Dump
             };
-        
-            # now we have 'psql', 'dump_with_name', ... functions in current namespace.
+            
+        # now we have 'psql', 'dump_with_name', ... functions in current namespace.
             # imported from Test::Environment::Plugin::PostreSQL and Test::Environment::Plugin::Dump
 
             eq_or_diff(
@@ -44,7 +44,7 @@ SEE ALSO
     A%3A&mode=module>
 
 AUTHOR
-    Jozef Kutej, <jozef@kutej.net>
+    Jozef Kutej, <jkutej@cpan.org>
 
 COPYRIGHT AND LICENSE
     Copyright (C) 2007 by Jozef Kutej

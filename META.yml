@@ -1,10 +1,12 @@
 ---
 name: Test-Environment
-version: 0.04_03
+version: 0.04
 author:
   - 'Jozef Kutej <jozef@kutej.net>'
 abstract: Base module for loading Test::Environment::Plugin::*
 license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
   APR::Pool: 0
   APR::Table: 0
@@ -33,7 +35,7 @@ provides:
     version: 0.01
   Test::Environment:
     file: lib/Test/Environment.pm
-    version: 0.04_03
+    version: 0.04
   Test::Environment::Plugin::Apache2:
     file: lib/Test/Environment/Plugin/Apache2.pm
     version: 0.01
@@ -52,4 +54,7 @@ provides:
   Test::Environment::Plugin::PostgreSQL:
     file: lib/Test/Environment/Plugin/PostgreSQL.pm
     version: 0.03
-generated_by: Module::Build version 0.26
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
