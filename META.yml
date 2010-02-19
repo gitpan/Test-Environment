@@ -1,12 +1,48 @@
 ---
-name: Test-Environment
-version: 0.04
+abstract: 'Base module for loading Test::Environment::Plugin::*'
 author:
   - 'Jozef Kutej <jozef@kutej.net>'
-abstract: Base module for loading Test::Environment::Plugin::*
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Test-Environment
+provides:
+  Apache2::Filter:
+    file: lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
+    version: 0.05
+  Apache2::Log:
+    file: lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
+    version: 0.05
+  Apache2::RequestRec:
+    file: lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
+    version: 0.05
+  Test::Environment:
+    file: lib/Test/Environment.pm
+    version: 0.05
+  Test::Environment::Plugin::Apache2:
+    file: lib/Test/Environment/Plugin/Apache2.pm
+    version: 0.05
+  Test::Environment::Plugin::Apache2::Apache2::Filter:
+    file: lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
+    version: 0.05
+  Test::Environment::Plugin::Apache2::Apache2::Log:
+    file: lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
+    version: 0.05
+  Test::Environment::Plugin::Apache2::Apache2::RequestRec:
+    file: lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
+    version: 0.05
+  Test::Environment::Plugin::Dump:
+    file: lib/Test/Environment/Plugin/Dump.pm
+    version: 0.01
+  Test::Environment::Plugin::PostgreSQL:
+    file: lib/Test/Environment/Plugin/PostgreSQL.pm
+    version: 0.03
 requires:
   APR::Pool: 0
   APR::Table: 0
@@ -21,40 +57,6 @@ requires:
   String::ShellQuote: 0
   Test::Differences: 0
   Test::More: 0
-build_requires:
-  Test::More: 0
-provides:
-  Apache2::Filter:
-    file: lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
-    version: 0.01
-  Apache2::Log:
-    file: lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
-    version: 0.01
-  Apache2::RequestRec:
-    file: lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
-    version: 0.01
-  Test::Environment:
-    file: lib/Test/Environment.pm
-    version: 0.04
-  Test::Environment::Plugin::Apache2:
-    file: lib/Test/Environment/Plugin/Apache2.pm
-    version: 0.01
-  Test::Environment::Plugin::Apache2::Apache2::Filter:
-    file: lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
-    version: 0.01
-  Test::Environment::Plugin::Apache2::Apache2::Log:
-    file: lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
-    version: 0.01
-  Test::Environment::Plugin::Apache2::Apache2::RequestRec:
-    file: lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
-    version: 0.01
-  Test::Environment::Plugin::Dump:
-    file: lib/Test/Environment/Plugin/Dump.pm
-    version: 0.01
-  Test::Environment::Plugin::PostgreSQL:
-    file: lib/Test/Environment/Plugin/PostgreSQL.pm
-    version: 0.03
-generated_by: Module::Build version 0.280801
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.05

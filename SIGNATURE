@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.61.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,21 +15,16 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 946066eb52585118ba9a082c0a1394f612b38b30 Build.PL
-SHA1 6af182cc968ce9348d85a0192bec1d27ed8b0d2e Changes
-SHA1 531b0f15f11b92a8fed3a194f79e0aa2249c84d4 MANIFEST
-SHA1 39bb94d2441c7c561e2d2b423650d3abd2be9a1b META.yml
-SHA1 8f18752535441f667b3be68d462b7847a517aab5 Makefile.PL
-SHA1 91120916c8c7b038f5e201e8d1268167e91b8aa2 README
-SHA1 4511cd2e17c98cafdae25638b8899ad012f6f328 debian/changelog
-SHA1 5d9474c0309b7ca09a182d888f73b37a8fe1362c debian/compat
-SHA1 1c25f6bfaf185e7b5985e12b8c57115d2ee5178d debian/control
-SHA1 8f3014c1aec65c24877f0a9ef8128d5c018ab592 debian/copyright
-SHA1 f07c262df9979938f451f49fec952df6b8edb10f debian/rules
-SHA1 b0f50456e908fc27e12db4fb477039d1db6ea59d lib/Test/Environment.pm
-SHA1 4cf6c013bc65597a8173bf3afdc4e3415106155b lib/Test/Environment/Plugin/Apache2.pm
-SHA1 3f6af3aa3c2f8d955d46b3c0149671b223c70ebd lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
-SHA1 d9b488dd5f8e712b2c7922015ac8dae02dfa5056 lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
-SHA1 dca114ca0078fec949bc465e332a42ac87b7db25 lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
+SHA1 071e94a6e34108a2ce05b852f8d40ae52c3b0d3c Changes
+SHA1 72a6a568fb4ac22ad7fec4c7bf691e6b0a4abb24 MANIFEST
+SHA1 0c3fe8c15808b2778dbf7c6e71e8eecf65f614c7 META.yml
+SHA1 6cf239d8d7bf4342e99c2c6dd2f54ef7e9a061c9 Makefile.PL
+SHA1 e35f76f574deeab4d6dcfb19cfc974602b9e4166 README
+SHA1 88363c73108be87115fa9bfce4ccbffd31d0e964 lib/Test/Environment.pm
+SHA1 e4abaeefcd121ad3fd7cbbeb12236de3117046ee lib/Test/Environment/Plugin/Apache2.pm
+SHA1 e8df87e7eb437c0ac5e9ae4984689199d3a6fe91 lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
+SHA1 e6bb83b123833346e71968f9b6f97b7e63ce801c lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
+SHA1 badcaac0fdd1d9796143274b6d218a1972e6a5bc lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
 SHA1 ba26d01596c4ae31d0bb654f4aebecdb3372888d lib/Test/Environment/Plugin/Dump.pm
 SHA1 ccf6f91fb859a199a98030e17dfa3ad8c99876b6 lib/Test/Environment/Plugin/PostgreSQL.pm
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00_distribution.t
@@ -79,9 +74,9 @@ SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/porting.p
 SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
 SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
+Version: GnuPG v1.4.10 (GNU/Linux)
 
-iD8DBQFIV2GuuzJBASXpqvsRAstAAJ0XkXMOXOWqSom+keXyW22NdHtLSQCdFyJQ
-218/ttq8I/mAtXbaGNv2pW0=
-=w+a9
+iEYEARECAAYFAkt+jUAACgkQC0OgUPgL2Sd6kwCgqVTSHbbnNmjOU0l137sJ1SH3
+FeoAoJWOGiCfZDiYKtnL0egzXZVNbHF8
+=TPkg
 -----END PGP SIGNATURE-----
