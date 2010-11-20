@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.61.
+signed via the Module::Signature module, version 0.63.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,17 +14,18 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 946066eb52585118ba9a082c0a1394f612b38b30 Build.PL
-SHA1 071e94a6e34108a2ce05b852f8d40ae52c3b0d3c Changes
-SHA1 72a6a568fb4ac22ad7fec4c7bf691e6b0a4abb24 MANIFEST
-SHA1 0c3fe8c15808b2778dbf7c6e71e8eecf65f614c7 META.yml
+SHA1 3938951ba9ef51a7ec56ff5e2b7807752780ca56 Build.PL
+SHA1 def29f868869ced7953144593771af4e1c93411f Changes
+SHA1 e51bc1649bec01eba319841a11bd58fb7341db72 MANIFEST
+SHA1 114eb905b8898060044a4e742b8ccfedf56164ca META.yml
 SHA1 6cf239d8d7bf4342e99c2c6dd2f54ef7e9a061c9 Makefile.PL
 SHA1 e35f76f574deeab4d6dcfb19cfc974602b9e4166 README
-SHA1 88363c73108be87115fa9bfce4ccbffd31d0e964 lib/Test/Environment.pm
-SHA1 e4abaeefcd121ad3fd7cbbeb12236de3117046ee lib/Test/Environment/Plugin/Apache2.pm
-SHA1 e8df87e7eb437c0ac5e9ae4984689199d3a6fe91 lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
-SHA1 e6bb83b123833346e71968f9b6f97b7e63ce801c lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
-SHA1 badcaac0fdd1d9796143274b6d218a1972e6a5bc lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
+SHA1 102644d122e2041510500ac4766b28f9c021a5b4 lib/Test/Environment.pm
+SHA1 3278b7c78ef71d3aa9f7c16bea72b6a9debef91b lib/Test/Environment/Plugin/Apache2.pm
+SHA1 5be00a848e20b441d6241ad008bfc08facbf2d80 lib/Test/Environment/Plugin/Apache2/Apache2/Filter.pm
+SHA1 b2ad4bc4574f4f083d9bd49c3eb09c00edc9d19a lib/Test/Environment/Plugin/Apache2/Apache2/Log.pm
+SHA1 a003aa3165c28a1d3099c7100b78a2493f140ca9 lib/Test/Environment/Plugin/Apache2/Apache2/Request.pm
+SHA1 a7ed09c905019b46e8dac2cb4775ba51751803a7 lib/Test/Environment/Plugin/Apache2/Apache2/RequestRec.pm
 SHA1 ba26d01596c4ae31d0bb654f4aebecdb3372888d lib/Test/Environment/Plugin/Dump.pm
 SHA1 ccf6f91fb859a199a98030e17dfa3ad8c99876b6 lib/Test/Environment/Plugin/PostgreSQL.pm
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00_distribution.t
@@ -32,7 +33,7 @@ SHA1 4aeb184c9bed26ab6c3be1ebdb8470c0cb353b1f t/00_signature.t
 SHA1 cc8e7197735de02bde149af8d3af142b805a86eb t/01_Test-Environment.t
 SHA1 74695fb954a27da8b589c09de15c2dc7e7480382 t/02_Test-Environment-Plugin-PostreSQL.t
 SHA1 adabca08b4627fb5868c3e7ff5323696c6df7e26 t/03_Test-Environment-Plugin-Dump.t
-SHA1 dab05adae5b01639b4b445df2f72100e51b89232 t/04_Test-Environment-Plugin-Apache2.t
+SHA1 d30bfa720774d181c67f3ca50f308a7774ecc307 t/04_Test-Environment-Plugin-Apache2.t
 SHA1 0757f7f180eb73f6a777de926574ef722921cc36 t/dumps/dump01.txt
 SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Access.pm
 SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/lib-no-Apache2/Apache2/Build.pm
@@ -76,7 +77,7 @@ SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkt+jUAACgkQC0OgUPgL2Sd6kwCgqVTSHbbnNmjOU0l137sJ1SH3
-FeoAoJWOGiCfZDiYKtnL0egzXZVNbHF8
-=TPkg
+iEYEARECAAYFAkzoC/kACgkQC0OgUPgL2Se0EgCfTL8qZFTRUbhquS04lREWyvVY
+TXEAoKfPcr39eURDG6nClhjTLjY3PsB/
+=/Ndx
 -----END PGP SIGNATURE-----
